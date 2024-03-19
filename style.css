@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+/* global styles */
+*,
+*::after,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Red Hat Text;
+}
+
+.wrapper {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #1d1e28 0.12%,
+    #261c2d 94.84%,
+    #261a2d 100%
+  );
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  background-image: url(./assets/stars.SVG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* main content styles */
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./assets/hills.SVG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+/* title for content styes */
+
+.heading h1 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
+.heading h1:hover {
+  background: linear-gradient(hsl(345, 90%, 60%), rgb(245, 46, 195));
+}
+
+/* countdown wrapper styles*/
+
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-font {
+  width: 148px;
+  height: 150px;
+  position: relative;
+  z-index: 44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 10px 2px 2px rgba(0, 0, 0, 0.777);
+  background: linear-gradient(hsl(235, 21%, 18%) 50%, hsl(237, 21%, 22%) 50%);
+  overflow-x: hidden;
+}
+
+.countdown-font::after {
+  position: absolute;
+  left: -4%;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(25, 26, 35, 1);
+}
+
+.countdown-font::before {
+  position: absolute;
+  right: -4%;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(25, 26, 35, 1);
+}
+
+.countdown-font h2 {
+  font-size: 80px;
+  letter-spacing: -2.4px;
+  color: rgba(251, 94, 132, 1);
+}
+
+.card h3 {
+  padding-top: 18%;
+  font-size: 14px;
+  letter-spacing: 5.92px;
+  color: rgba(131, 133, 169, 1);
+}
+
+/* footer styles   */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+}
+
+a path:hover {
+  fill: #fb5e84;
+}

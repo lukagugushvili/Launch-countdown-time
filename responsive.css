@@ -1,0 +1,26 @@
+@media (max-width: 700px) {
+  .countdown-font {
+    width: 70px;
+    height: 71px;
+  }
+  .countdown-font h2 {
+    font-size: 36px;
+    letter-spacing: -1.08px;
+  }
+  .card h3 {
+    padding-top: 18%;
+    font-size: 7px;
+    letter-spacing: 2.96px;
+  }
+  .countdown-font::after {
+    left: -5;
+    width: 6px;
+    height: 6px;
+  }
+
+  .countdown-font::before {
+    right: -5;
+    width: 6px;
+    height: 6px;
+  }
+}
